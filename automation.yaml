@@ -1,0 +1,3 @@
+- !include automation/sleep.yaml
+- !include automation/sunset.yaml
+- !include automation/shower_time.yaml

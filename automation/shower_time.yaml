@@ -1,0 +1,9 @@
+alias: Turn off shower lights after 30 minutes
+trigger:
+  - platform: state
+    entity_id: switch.linear_ws15z1_switch_8 
+    to: 'on'
+action:
+  service: homeassistant.turn_on
+  entity_id: script.timed_shower_lamp
+

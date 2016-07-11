@@ -1,0 +1,4 @@
+sleep: !include scripts/sleep.yaml
+sunset_lights: !include scripts/sunset_lights.yaml
+timed_shower_lamp: !include scripts/shower_time.yaml
+shower_timer_off: !include scripts/shower_timer_off.yaml

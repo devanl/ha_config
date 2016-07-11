@@ -1,0 +1,22 @@
+sequence:
+- alias: Turn off driveway 
+  service: light.turn_off
+  data:
+    entity_id: light.dragon_tech_in_wall_dimmer_level_11
+- alias: Turn off side door
+  service: light.turn_off
+  data:
+    entity_id: light.dragon_tech_in_wall_dimmer_level_3
+- service: light.turn_off
+  data:
+    entity_id: light.dragon_tech_in_wall_dimmer_level_9
+- service: switch.turn_off
+  data:
+    entity_id: switch.dragon_tech_unknown_type4447_id3033_switch_10
+- service: switch.turn_off
+  data:
+    entity_id: switch.driveway_switch_4
+- service: light.turn_off
+  data:
+    entity_id: light.ge_unknown_type4944_id3033_level_12
+

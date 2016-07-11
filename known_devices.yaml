@@ -1,0 +1,231 @@
+
+jensiphone:
+  name: Jens-iPhone
+  mac: 44:00:10:B5:20:99
+  picture: 
+  track: yes
+  hide_if_away: no
+
+iphone7:
+  name: iPhone-7
+  mac: C0:1A:DA:82:AC:46
+  picture: 
+  track: no
+  hide_if_away: no
+
+newhost:
+  name: new-host
+  mac: B4:79:A7:24:13:9B
+  picture: 
+  track: no
+  hide_if_away: no
+
+jens_asustek_tablet:
+  name: Jen's AsusTek Tablet
+  mac: F8:32:E4:10:E4:E7
+  picture: 
+  track: no
+  hide_if_away: no
+
+jenvaio:
+  name: Jen-VAIO
+  mac: 74:E5:0B:25:7A:28
+  picture: 
+  track: no
+  hide_if_away: no
+
+ecobee:
+  name: Ecobee
+  mac: 44:61:32:F3:58:30
+  picture: 
+  track: no
+  hide_if_away: no
+
+great_room_chromecast:
+  name: /"Great Room/" Chromecast
+  mac: A4:77:33:F9:77:F0
+  picture: 
+  track: no
+  hide_if_away: no
+
+nest_thermostat:
+  name: Nest Thermostat
+  mac: 18:B4:30:29:5F:02
+  picture: 
+  track: no
+  hide_if_away: no
+
+jensiphone2:
+  name: Jens-iPhone-2
+  mac: D8:96:95:A5:16:E7
+  picture: 
+  track: yes
+  hide_if_away: no
+
+nest_thermostat_2:
+  name: Nest Thermostat
+  mac: 18:B4:30:29:6F:09
+  picture: 
+  track: no
+  hide_if_away: no
+
+devans_s5:
+  name: Devan's S5
+  mac: FC:C2:DE:98:57:5A
+  picture: 
+  track: yes
+  hide_if_away: no
+
+wii:
+  name: Wii
+  mac: 00:19:1D:E2:F3:FF
+  picture: 
+  track: no
+  hide_if_away: no
+
+iphonedlippman:
+  name: iPhone-dlippman
+  mac: 6C:40:08:4D:7B:3D
+  picture: 
+  track: yes
+  hide_if_away: no
+
+94a1a2733a16:
+  name: 94a1a2733a16
+  mac: 94:A1:A2:73:3A:16
+  picture: 
+  track: no 
+  hide_if_away: no
+
+af870917:
+  name: AF870917
+  mac: A4:4E:31:76:10:E4
+  picture: 
+  track: no
+  hide_if_away: no
+
+android51cbda81f74831e3:
+  name: android-51cbda81f74831e3
+  mac: 8C:77:12:A3:52:E9
+  picture: 
+  track: no
+  hide_if_away: no
+
+lesleesmini:
+  name: Leslees-Mini
+  mac: 24:A2:E1:09:1E:4E
+  picture: 
+  track: yes
+  hide_if_away: yes
+
+iphone:
+  name: iPhone
+  mac: C8:1E:E7:2D:7F:43
+  picture: 
+  track: yes
+  hide_if_away: yes
+
+androidb6c53810b13c7f33:
+  name: android-b6c53810b13c7f33
+  mac: 00:E0:4C:2E:5F:D3
+  picture: 
+  track: no
+  hide_if_away: no
+
+androidfef2f3ca18bc76c3:
+  name: android-fef2f3ca18bc76c3
+  mac: 00:E0:4C:C8:0E:7C
+  picture: 
+  track: no
+  hide_if_away: no
+
+chromecast:
+  name: Chromecast
+  mac: 6C:AD:F8:5E:01:FA
+  picture: 
+  track: no
+  hide_if_away: no
+
+androidb6c53810b13c7f33_2:
+  name: android-b6c53810b13c7f33
+  mac: 00:E0:4C:33:6B:45
+  picture: 
+  track: no
+  hide_if_away: no
+
+eleanorsiphone:
+  name: Eleanors-iPhone
+  mac: 18:34:51:B2:F6:47
+  picture: 
+  track: yes
+  hide_if_away: yes
+
+stanleysiphone:
+  name: Stanleys-iPhone
+  mac: D8:96:95:99:45:34
+  picture: 
+  track: yes
+  hide_if_away: yes
+
+eleanorsipad:
+  name: Eleanors-iPad
+  mac: 5C:AD:CF:EF:03:66
+  picture: 
+  track: no
+  hide_if_away: no
+
+martasiphone:
+  name: Martas-iPhone
+  mac: 3C:AB:8E:6C:8A:57
+  picture: 
+  track: yes
+  hide_if_away: yes
+
+androidd98170b68122cee7:
+  name: android-d98170b68122cee7
+  mac: 54:AB:3A:30:F6:FD
+  picture: 
+  track: no
+  hide_if_away: no
+
+androidb6c53810b13c7f33_3:
+  name: android-b6c53810b13c7f33
+  mac: 00:E0:4C:9F:4E:99
+  picture: 
+  track: no
+  hide_if_away: no
+
+androidfef2f3ca18bc76c3_2:
+  name: android-fef2f3ca18bc76c3
+  mac: 00:E0:4C:06:49:E2
+  picture: 
+  track: yes
+  hide_if_away: no
+
+craigsiphone:
+  name: Craigs-iPhone
+  mac: 54:26:96:3A:03:C9
+  picture: 
+  track: yes
+  hide_if_away: no
+
+00e04c16f8a3:
+  name: 00e04c16f8a3
+  mac: 00:E0:4C:16:F8:A3
+  picture: 
+  track: yes
+  hide_if_away: no
+
+androidb6c53810b13c7f33_4:
+  name: android-b6c53810b13c7f33
+  mac: 00:E0:4C:85:E6:34
+  picture: 
+  track: yes
+  hide_if_away: no
+
+androidfef2f3ca18bc76c3_3:
+  name: android-fef2f3ca18bc76c3
+  mac: 00:E0:4C:4F:19:FE
+  picture: 
+  track: yes
+  hide_if_away: no

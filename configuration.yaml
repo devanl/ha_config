@@ -1,0 +1,136 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 41.956
+  longitude: -71.4338
+  # C for Celcius, F for Fahrenheit
+  temperature_unit: F
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+  customize: !include customize.yaml
+
+logger:
+  default: critical
+#  default: info
+#  default: debug 
+  logs:
+    #homeassistant.components.zwave: debug
+    #homeassistant.components.mqtt: debug
+    homeassistant.components.recorder: critical
+    libopenzwave: critical 
+    openzwave: critical
+    #homeassistant.core: critical
+
+# Enables support for tracking state changes over time.
+history:
+
+# Discover some devices automatically
+discovery:
+
+# Enables the frontend
+frontend:
+
+# Track the sun
+sun:
+
+# View all events in a logbook
+logbook:
+
+# Checks for available updates
+updater:
+
+http:
+  api_password: !secret http_password
+  server_port: 443
+  ssl_certificate: /var/opt/homeassistant/tls/lippman.duckdns.org/fullchain.pem
+  ssl_key: /var/opt/homeassistant/tls/lippman.duckdns.org/privkey.pem
+
+nest:
+  username: !secret nest_user
+  password: !secret nest_pass
+
+ecobee:
+  api_key: !secret ecobee_key 
+
+thermostat:
+  platform: nest
+
+bloomsky:
+  api_key: !secret bloom_key
+
+zwave:
+  usb_path: /dev/ttyUSB0
+  config_path: /usr/local/share/python-openzwave/config
+  polling_interval: 2000
+  customize:
+    switch.linear_ws15z1_switch_8:
+        polling_intensity: 1
+    light.unknown_level_6:
+        polling_intensity: 1
+    switch.dragon_tech_unknown_type4447_id3033_switch_10:
+        polling_intensity: 2
+
+device_tracker:
+  platform: unifi
+  host: 192.168.1.187
+  port: 8443
+  username: !secret unifi_user
+  password: !secret unifi_pass
+
+group:
+  outside:
+    name: Exterior
+    entities:
+      - light.dragon_tech_in_wall_dimmer_level_3
+      - switch.driveway_switch_4
+      - light.dragon_tech_in_wall_dimmer_level_9
+      - light.dragon_tech_in_wall_dimmer_level_11
+      - light.ge_unknown_type4944_id3033_level_12
+  downstairs:
+    name: Living Area
+    entities:
+      - thermostat.family_roomnest
+      - switch.dragon_tech_unknown_type4447_id3033_switch_10
+  upstairs:
+    name: Upstairs
+    entities:
+      - switch.linear_ws15z1_switch_8
+      - light.unknown_level_6
+      - thermostat.bedroomnest
+      - thermostat.upstairs
+      - sensor.upstairs_occupancy
+      - sensor.evas_room_occupancy
+      - sensor.evas_room_temperature
+      - sensor.upstairs_temperature
+  weather:
+    name: Weather
+    entities:
+      - binary_sensor.cumbie5_night
+      - binary_sensor.cumbie5_rain
+      - camera.cumbie5
+      - sensor.cumbie5_humidity
+      - sensor.cumbie5_luminance
+      - sensor.cumbie5_pressure
+      - sensor.cumbie5_temperature
+      - sensor.cumbie5_uvindex
+      - sun.sun
+  devices:
+    name: Devices
+    entities:
+      - device_tracker.devans_s5
+      - device_tracker.iphonedlippman
+      - device_tracker.jensiphone
+      - device_tracker.jensiphone2
+
+### Automation ###
+automation: !include automation.yaml
+
+### Scripts ###
+#script: !include scripts.yaml
+script:
+  sleep: !include scripts/sleep.yaml
+  sunset_lights: !include scripts/sunset_lights.yaml
+  timed_shower_lamp: !include scripts/shower_time.yaml
+  shower_timer_off: !include scripts/shower_timer_off.yaml
+

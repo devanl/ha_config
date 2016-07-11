@@ -1,0 +1,20 @@
+# timed_shower_lamp:
+  alias: "Set timer"
+  sequence:
+    - event: LOGBOOK_ENTRY
+      event_data:
+        name: Shower Light
+        message: is being used
+    # Cancel ev. old timers
+    - service: script.turn_off
+      data:
+         entity_id: script.shower_timer_off
+    # since the switch fires this script we don't need to turn it on
+    #- execute_service: light.turn_on
+    #  service_data:
+    #    entity_id: light.kitchen
+    # Set new timer
+    - service: script.turn_on
+      data:
+        entity_id: script.shower_timer_off
+

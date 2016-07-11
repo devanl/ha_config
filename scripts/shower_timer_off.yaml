@@ -1,0 +1,9 @@
+# shower_timer_off:
+  alias: "Turn off shower lamp after 30 minutes"
+  sequence:
+    - delay:
+        minutes: 30
+    - service: switch.turn_off
+      data:
+        entity_id: switch.linear_ws15z1_switch_8 
+
